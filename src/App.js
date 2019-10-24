@@ -1,14 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Example from './Example'
+// import './App.css';
+import 'main.css'
+// import Example from './Example'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Example />
-      </header>
+    <div className="container">
+      <h2></h2>
+      <div className="flex-row">
+        <div className="flex-large">
+          <h3>Add user</h3>
+        </div>
+        <div className="flex-large">
+          <h3>View users</h3>
+        </div>
+      </div>
     </div>
   );
 }
