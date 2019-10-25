@@ -1,22 +1,19 @@
-import React from 'react';
-// import './App.css';
-import 'main.css'
-// import Example from './Example'
+import React, { useState } from 'react'
+import TodoForm from './TodoForm.js'
 
 const App = () => {
+  const [todos, setTodos] = useState([])
   return (
     <div className="container">
-      <h2></h2>
+      <h2>React hooks</h2>
       <div className="flex-row">
         <div className="flex-large">
-          <h3>Add user</h3>
-        </div>
-        <div className="flex-large">
-          <h3>View users</h3>
+          <h2>Todo form</h2>
+          <TodoForm save={console.warn}/>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,6 +1,22 @@
 Make sense of react-hooks:
 https://www.taniarascia.com/crud-app-in-react-with-hooks/
 https://veerasundar.com/blog/2019/03/rewriting-a-react-component-using-hooks-and-reactmemo/
+https://www.freecodecamp.org/news/how-to-build-a-todo-list-with-react-hooks-ebaa4e3db3b/
+https://kentcdodds.com/blog/react-hooks-array-destructuring-fundamentals
 
-Main page:
-  creates a table with users list.
+Pages:
+  todo-form pg,
+    ✔ needs to pass a var to the main func, @done(2019-10-25 09:39) @project(Pages)
+    ✔ will need just the TextField @done(2019-10-25 09:39) @project(Pages)
+    ✔ will need to keep a state for the todo var–useState for the Todo @done(2019-10-25 10:01) @project(Pages)
+    ✔ will need two handlers so that one can handle the submit form, @done(2019-10-25 13:53) @project(Pages)
+    ✔ and then the other one can do the textfield saving the state value to the app? @done(2019-10-25 13:53) @project(Pages)
+    ☐ todos will need to have states too
+
+  functionalities,
+    add
+    delete
+    clears out after adding a todo
+
+  todo-list pg
+    
