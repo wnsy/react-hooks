@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 import TextField from '@material-ui/core/TextField'
+import useInputState from './useInputState'
 
 const TodoForm = ({ saveTodo }) => {
-  console.log("saveTodo", saveTodo)
   //keeps the val
-  const [value, setValue] = useState('')
+  // const [value, setValue] = useState('')
+  const { value, onChange, reset } = useInputState('')
 
   const handleSubmit = (event) => {
-    console.log("event", event)
-    event.preventDefault(saveTodo) //don't save it yet
-  }
-
-  const handleChange = (event) => {
-    console.log(event.target.value)
-    setValue(event.target.value)
+    event.preventDefault() // prevent child event bubbling to parent to document
+    saveTodo(value) // WHY: from that destructuring saveTodo becoming a function???
+    reset('')
   }
 
   return(
@@ -27,7 +24,8 @@ const TodoForm = ({ saveTodo }) => {
           variant='outlined'
           margin='normal'
           placeholder="Add todo"
-          onChange={handleChange}
+          onChange={onChange}
+          value={value}
         />
       </form>
     </div>
